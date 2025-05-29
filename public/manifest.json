@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "ARETA360 is building the intelligent platforms and products that can offer solutions that enhance efficiency, improve customer experience, and drive sales."
 }

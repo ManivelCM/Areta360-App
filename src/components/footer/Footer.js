@@ -27,7 +27,7 @@ const Footer = () => (
         <div>
           <h4>Let's Connect</h4>
           <ul>
-            <li><a href="mailto:admin@areta360.com" style={{color: '#CACBCC'}}>Email: admin@areta360.com</a></li>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@areta360.com" target="_blank" rel="noopener noreferrer" style={{color: '#CACBCC'}}>Email: admin@areta360.com</a></li>
             <li><a href="tel:+919980474080" style={{color: '#CACBCC'}}>Phone: +91 9980474080</a></li>
           </ul>
         </div>
