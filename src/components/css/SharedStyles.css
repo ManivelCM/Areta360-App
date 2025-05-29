@@ -1,0 +1,132 @@
+/* Common container styles for all pages */
+.page-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Header styles */
+.page-header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Breadcrumb navigation styles */
+.company-text {
+  color: #9B9D9F;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.arrow {
+  color: #cdcdcd;
+  font-size: 0.8rem;
+  margin: 0 0.8rem;
+  opacity: 0.8;
+}
+
+.page-text {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Page content styles */
+.page-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Page title styles */
+.page-title {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .header-content,
+  .page-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content,
+  .page-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-title {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-top: -30px;
+  }
+
+  .header-text {
+    gap: 0.5rem;
+  }
+
+  .company-text,
+  .page-text {
+    font-size: 0.9rem;
+  }
+
+  .arrow {
+    margin: 0 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content,
+  .page-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-title {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: -50px;
+  }
+  .button-container2 button {
+    margin-left: 80px;
+  }
+  .usp-grid {
+    margin-top: 30px;
+  }
+} 

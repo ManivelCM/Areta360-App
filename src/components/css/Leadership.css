@@ -1,0 +1,255 @@
+.leadership-container {
+  padding-top: 72px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-image: url('../../assets/images/bg-img3.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.leadership-header {
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.company-text {
+  color: #9B9D9F;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.arrow {
+  color: #9B9D9F;
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+  opacity: 0.8;
+}
+
+.leadership-text {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.leadership-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-top: 30px;
+}
+
+.page-title {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Urbanist';
+}
+
+.leadership-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.profile-card {
+  display: flex;
+  gap: 0.6rem;
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(204, 230, 255, 0.1);
+  border-radius: 16px;
+  margin-bottom: 0.6rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.profile-left {
+  flex: 0 0 180px;
+  margin-top: 18px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px auto 0 auto;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: 'Urbanist';
+  text-align: center;
+}
+
+.profile-position {
+  color: #9B9D9F;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Urbanist';
+  text-align: center;
+}
+
+.profile-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  line-height: 1.3;
+  font-family: 'Urbanist';
+  letter-spacing: 1px;
+  padding-right: 10px;
+  text-align: justify;
+  margin-top: 25px;
+}
+
+@media (max-width: 1200px) {
+  .profile-card {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .profile-left {
+    flex: 0 0 120px;
+  }
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.8rem;
+    gap: 1rem;
+    width: calc(100% - 1rem);
+    margin: 0 0 1rem 0;
+    box-sizing: border-box;
+  }
+  .profile-left {
+    flex: 0 0 auto;
+  }
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+  .profile-name {
+    font-size: 1.1rem;
+  }
+  .profile-position {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+  .profile-description {
+    font-size: 0.85rem;
+  }
+  .leadership-profiles {
+    padding: 0;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .page-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    gap: 0.7rem;
+    width: 94%;
+    margin-left: -20px;
+  }
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+  .profile-position {
+    font-size: 0.8rem;
+  }
+  .profile-description {
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+  .leadership-profiles {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  .page-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .leadership-profiles {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .leadership-profiles {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.leadership-header {
+  animation: fadeIn 1s ease-out;
+}
+
+.profile-card {
+  animation: fadeIn 1s ease-out;
+} 
